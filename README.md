@@ -1,7 +1,7 @@
 # Google-Stock-Price-Prediction
 Predicting the Google Stock Price Value using Linear Regression
 
-
+![alt text](https://github.com/sarthak25/Google-Stock-Price-Prediction/blob/master/Figures/Prediction.png)
 
 
 To run this code, you will need: <br> 
