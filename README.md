@@ -1,5 +1,12 @@
 # Google-Stock-Price-Prediction
-Predicting the Google Stock Price Value using Linear Regression
+
+![Python](https://img.shields.io/badge/python-3.x-orange.svg)
+![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)
+![Type](https://img.shields.io/badge/Machine-Learning-red.svg) ![Type](https://img.shields.io/badge/Type-Supervised-yellow.svg)
+![Status](https://img.shields.io/badge/Status-Completed-yellowgreen.svg)
+
+
+### Predicting the Google Stock Price Value using Linear Regression <br>
 
 ![alt text](https://github.com/sarthak25/Google-Stock-Price-Prediction/blob/master/Figures/Prediction.png)
 
