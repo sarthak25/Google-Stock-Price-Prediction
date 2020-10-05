@@ -1,5 +1,5 @@
 # A PREDICTIVE MODEL FOR GOOGLE STOCK PRICES USING LINEAR REGRESSION
-# BY - OMKAR VIVEK SABNIS: 17-06-2018
+
 
 # IMPORTING ALL THE MODULES
 import numpy as np
@@ -10,11 +10,12 @@ from sklearn.linear_model import LinearRegression
 
 # READING THE DATASET AND VISUALIZING A FEW ENTRIES
 dt=pd.read_csv("Dataset/Google_Stock_Price_Train.csv")
-print("Few Entries of the dataset:")
+print("Entries of the dataset:")
 print(dt.head())
 
 # PREPARATION OF THE TRAINING DATASET
-df=dt.iloc[:,1:2].values # NUMPY ARRAY
+df=dt.iloc[:,1:2].values 
+# NUMPY ARRAY
 print("Shape of the training dataset:")
 print(dt.shape)
 
@@ -24,9 +25,9 @@ for i in range(60,1258):
     x_train.append(df[i-60:i,0])
     y_train.append(df[i,0])
 x_train,y_train= np.array(x_train), np.array(y_train)
-print("Converted X_train shape:")
+print("The Converted X_train shape:")
 print(x_train.shape)
-print("Converted Y_train shape:")
+print("The Converted Y_train shape:")
 print(y_train.shape)
 
 # PREPARATION OF THE TESTING DATASET
@@ -58,9 +59,9 @@ print("Prediction:")
 print(pred_lrm)
 
 # PLOTTING THE GRAPH
-plt.plot(Real_stock_price,color='red', label='Real')
-plt.plot(pred_lrm,color='green',label='Predicted')
-plt.title('Google stock price prediction')
+plt.plot(Real_stock_price,color='red', label='Real Result')
+plt.plot(pred_lrm,color='green',label='Predicted by Model')
+plt.title('Google Stock Price Prediction')
 plt.xlabel('Time')
 plt.ylabel('Price')
 plt.legend()
